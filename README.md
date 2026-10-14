@@ -65,69 +65,6 @@ Task operations are restricted by the authenticated user's ID to prevent users f
 * **API Documentation:** Swagger/OpenAPI
 * **Package Manager:** pnpm
 
-## Project Structure
-
-```text
-src/
-├── admin/
-│   ├── admin.controller.ts
-│   └── admin.module.ts
-│
-├── auth/
-│   ├── dto/
-│   ├── auth.controller.ts
-│   ├── auth.module.ts
-│   ├── auth.service.ts
-│   └── email.service.ts
-│
-├── common/
-│   ├── decorators/
-│   ├── filters/
-│   └── guards/
-│
-├── db/
-│   ├── index.ts
-│   └── schema.ts
-│
-├── tasks/
-│   ├── dto/
-│   ├── tasks.controller.ts
-│   ├── tasks.module.ts
-│   └── tasks.service.ts
-│
-├── users/
-│   ├── users.module.ts
-│   └── users.service.ts
-│
-├── app.module.ts
-└── main.ts
-```
-
-## Application Architecture
-
-```text
-Client
-  │
-  ▼
-NestJS Controllers
-  │
-  ▼
-Validation Pipes
-  │
-  ▼
-Authentication and Authorization Guards
-  │
-  ▼
-Feature Services
-  │
-  ▼
-Drizzle ORM
-  │
-  ▼
-Neon PostgreSQL
-```
-
-The application is organized into feature modules so that authentication, users, tasks, and administration remain separated and maintainable.
 
 ## Authentication Flow
 
