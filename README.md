@@ -238,21 +238,14 @@ Production mode:
 pnpm start:prod
 ```
 
-The API runs at:
+The API runs at here:
 
 ```text
 http://localhost:3000/api
 ```
 
-Swagger documentation is available at:
+Swagger documentation is available at here:
 
 ```text
 http://localhost:3000/api/docs
 ```
-
-
-## Author
-
-**Sarath**
-
-* GitHub: [withsarath](https://github.com/withsarath)
